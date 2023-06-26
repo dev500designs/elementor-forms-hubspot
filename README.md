@@ -3,7 +3,7 @@ It is necessary to put the following id to each of the utm form fields.
 
 utm_source <br />
 utm_medium <br />
-campaign_utm <br />
+utm_campaign <br />
 utm_term <br />
 utm_content <br />
 
