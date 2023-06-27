@@ -1,27 +1,38 @@
-# elementor-forms-hubspot
-1. Installation
-Install the plugin: Hubspot - https://wordpress.org/plugins/leadin/
-Install the plugin: Automator - https://wordpress.org/plugins/uncanny-automator/
+# Elementor Forms HubSpot Integration
 
-3. Configuration
-Connect the Hubspot client account.
-On the Hubspot Account, go to Settings > Data Management > Create a New Group of Fields.
-Add a Name for the Group, for example, UTMs.
-Then create a new "Property" for that group named exactly as utm_XXXXX
-The "Field Type" should be: "Single-line text" for all fields, click on next.
-Then Enable "Show in forms, pop-up forms, and bots".
-  > Repeat all the steps 3 all the neccesary times to create all the groups needed for the client.
+## 1. Installation
 
-4. Elementor Form Configuration
-On the Elementor Widget, on the Elementor Form the "Name" of the Form should be named: <strong>Subscriptions</strong>.
-The FormID should be unique. Must be set so the Client can filter the Form Submissions on Hubspot.
+Install the following plugins:
 
-It is necessary to put the following id to each of the utm form fields ID's.
+- [HubSpot](https://wordpress.org/plugins/leadin/)
+- [Automator](https://wordpress.org/plugins/uncanny-automator/)
 
-- utm_source <br />
-- utm_medium <br />
-- utm_campaign <br />
-- utm_term <br />
-- utm_content <br />
+## 2. Configuration
 
-Important! utm fields must be text type.
+Connect to the HubSpot client account.
+
+Within the HubSpot account, follow these steps:
+
+- Go to Settings > Data Management > Create a New Group of Fields.
+- Add a name for the group (e.g., UTMs).
+- Create a new "Property" for that group, named exactly as `utm_XXXXX`.
+- Set the "Field Type" to "Single-line text" for all fields, then click on "next".
+- Enable the "Show in forms, pop-up forms, and bots" option.
+
+Repeat these steps as many times as necessary to create all the required groups for the client.
+
+## 3. Elementor Form Configuration
+
+On the Elementor Widget, the "Name" of the Form should be set as `Subscriptions`.
+
+The Form ID should be unique. This allows the client to filter the Form Submissions on HubSpot.
+
+Each UTM form field ID should be set to one of the following:
+
+- `utm_source`
+- `utm_medium`
+- `utm_campaign`
+- `utm_term`
+- `utm_content`
+
+**Note:** All UTM fields must be set as text type.
