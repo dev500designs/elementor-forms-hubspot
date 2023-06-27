@@ -56,17 +56,6 @@ jQuery(document).ready(function() {
     }
 });
 </script>
-<style>
-	
-	.elementor-field-group-utm_source, 
-	.elementor-field-group-utm_medium, 
-	.elementor-field-group-utm_campaign, 
-	.elementor-field-group-utm_term, 
-	.elementor-field-group-utm_content{
-		display: none!important;
-	}
-
-</style>
 <?php
 }
 add_action('wp_footer', 'set_cookies_input');
