@@ -40,3 +40,17 @@ Within the HubSpot account, follow these steps:
 
 Repeat these steps as many times as necessary to create all the required groups for the client.
 
+## 4. Automator
+
+- Create a new recipe.
+- Add the Title
+- Select "Guest" Users.
+- As trigger select: Elementor
+- Then select the Form Suscription.
+- Create An Action.
+- Select Hubspot
+- Then Create/Update a contact in HubSpot
+- Map the fields.
+- Save the Recipe
+- Activate the recipe.
+- Try the form.
