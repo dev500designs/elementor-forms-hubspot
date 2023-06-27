@@ -1,10 +1,10 @@
 <?php
 /**
-* Plugin Name: 500 Designs UTM'S
+* Plugin Name: 500 Designs UTMs
 * Plugin URI: https://500designs.com/
-* Description: UTM'S registeration for 500 Designs.
+* Description: UTM'S as Cookies
 * Version: 1.0.0
-* Author: Development team
+* Author: 500 Designs
 * Author URI: https://500designs.com/
 */
 
@@ -25,7 +25,9 @@ jQuery(document).ready(function() {
     for(var i = 0; i < utm_params.length; i++) {
         var utm_value = getUrlParameter(utm_params[i]);
         if (utm_value != '') {
-            document.cookie = utm_params[i] + "=" + utm_value + "; path=/";
+            var date = new Date();
+            date.setFullYear(date.getFullYear() + 1);
+            document.cookie = utm_params[i] + "=" + utm_value + "; expires=" + date.toUTCString() + "; path=/";
         }
     }
 
@@ -68,3 +70,4 @@ jQuery(document).ready(function() {
 <?php
 }
 add_action('wp_footer', 'set_cookies_input');
+?>
